@@ -1,0 +1,32 @@
+name: appsline_pdf
+description: Lector minimalista de documentos PDF y DOCX.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.6.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+
+  # Selección de archivos (Android SAF / iOS UIDocumentPicker).
+  file_picker: ^10.1.0
+
+  # Visor de PDF (zoom, desplazamiento, búsqueda de texto).
+  syncfusion_flutter_pdfviewer: '>=31.1.17 <35.0.0'
+
+  # Lectura de DOCX (descompresión + parseo de XML).
+  archive: '>=3.4.0 <5.0.0'
+  xml: ^6.3.0
+
+  # Persistencia de documentos recientes y almacenamiento local.
+  shared_preferences: ^2.3.0
+  path_provider: ^2.1.4
+
+dev_dependencies:
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
